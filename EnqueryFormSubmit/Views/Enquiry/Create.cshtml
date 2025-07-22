@@ -1,0 +1,83 @@
+﻿@model Enquiry
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Contact Person</label>
+        <input asp-for="ContactPerson" />
+        <span asp-validation-for="ContactPerson" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>From Country</label>
+        <input asp-for="FromCountry" />
+        <span asp-validation-for="FromCountry" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>From State</label>
+        <input asp-for="FromState" />
+        <span asp-validation-for="FromState" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>From City</label>
+        <input asp-for="FromCity" />
+        <span asp-validation-for="FromCity" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>To Country</label>
+        <input asp-for="ToCountry" />
+        <span asp-validation-for="ToCountry" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>To State</label>
+        <input asp-for="ToState" />
+        <span asp-validation-for="ToState" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>To City</label>
+        <input asp-for="ToCity" />
+        <span asp-validation-for="ToCity" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>From Address</label>
+        <textarea asp-for="FromAddress"></textarea>
+        <span asp-validation-for="FromAddress" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>To Address</label>
+        <textarea asp-for="ToAddress"></textarea>
+        <span asp-validation-for="ToAddress" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Enquiry Date</label>
+        <input asp-for="EnquiryDate" type="date" />
+        <span asp-validation-for="EnquiryDate" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Survey Date & Time</label>
+        <input asp-for="SurveyDateTime" type="datetime-local" />
+        <span asp-validation-for="SurveyDateTime" class="text-danger"></span>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
