@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnqueryFormSubmit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+231fed87f08ffc36f385f8af3d2cece8a331b58a")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnqueryFormSubmit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnqueryFormSubmit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,16 @@
+CREATE TABLE Enquiries (
+    EnquiryId INT PRIMARY KEY IDENTITY,
+    EnquiryNo VARCHAR(255) UNIQUE NOT NULL,
+    ContactPerson VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    FromCountry VARCHAR(100) NOT NULL,
+    FromState VARCHAR(100) NOT NULL,
+    FromCity VARCHAR(100) NOT NULL,
+    ToCountry VARCHAR(100) NOT NULL,
+    ToState VARCHAR(100) NOT NULL,
+    ToCity VARCHAR(100) NOT NULL,
+    FromAddress VARCHAR(500) NOT NULL,
+    ToAddress VARCHAR(500) NOT NULL,
+    EnquiryDate DATETIME NOT NULL,
+    SurveyDateTime DATETIME NOT NULL
+);
