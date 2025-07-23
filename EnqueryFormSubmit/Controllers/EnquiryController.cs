@@ -47,13 +47,7 @@ namespace EnqueryFormSubmit.Controllers
         }
 
         private string GenerateEnquiryNo(Enquiry enquiry)
-        {
-            //string namePart = enquiry.ContactPerson.Substring(0, 4).ToUpper();
-            //string countryPart = enquiry.FromCountry.Substring(0, 2).ToUpper();
-            //string datePart = DateTime.Now.ToString("yyyyMMdd");
-            //return $"{namePart}{countryPart}{datePart}";
-
-            // EnquiryNo Generation
+        { 
             string namePart = enquiry.ContactPerson.Length >= 4 ? enquiry.ContactPerson.Substring(0, 4).ToUpper() : enquiry.ContactPerson.ToUpper();
             string fromCountryPart = enquiry.FromCountry.Length >= 2 ? enquiry.FromCountry.Substring(0, 2).ToUpper() : enquiry.FromCountry.ToUpper();
             string toCountryPart = enquiry.ToCountry.Length >= 2 ? enquiry.ToCountry.Substring(0, 2).ToUpper() : enquiry.ToCountry.ToUpper();
