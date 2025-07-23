@@ -39,8 +39,6 @@ namespace EnqueryFormSubmit.Controllers
                     return View(model);
                 }
             }
-                // Generate EnquiryNo
-                // Generate EnquiryNo2
                 model.EnquiryNo = GenerateEnquiryNo(model);
 
             await _repository.AddAsync(model);
